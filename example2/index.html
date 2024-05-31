@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mCs Employee Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-search">
+            <div class="logo">mCs</div>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-profile">
+            <img src="user-profile-icon.png" alt="User Profile">
+        </div>
+    </header>
+    <aside>
+        <ul>
+            <li>Dashboard</li>
+            <li>Users</li>
+            <li>Campaigns</li>
+            <li>Sales goals</li>
+        </ul>
+    </aside>
+    <main>
+        <div class="main-header">
+            <h2>Users</h2>
+            <button>Add New User</button>
+        </div>
+        <div class="filters">
+            <input type="text" placeholder="Search by name">
+            <select>
+                <option>Status</option>
+                <option>Active</option>
+                <option>Blocked</option>
+                <option>Inactive</option>
+            </select>
+            <input type="date">
+            <button>Add Filters</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>User name</th>
+                    <th>Status</th>
+                    <th>Modified on</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td class="status blocked">Blocked</td>
+                    <td>20.7.2021</td>
+                </tr>
+                <tr>
+                    <td>Elie Clark</td>
+                    <td class="status active">Active</td>
+                    <td>20.7.2021</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../OneHarris, Inc/Digital Designers (HDS) - General/00-Management/HDS-Tools/04_HDS-Tools/HDS-Tools"
+		},
+		{
+			"name": "analyze-and-generate-images-with-Azure-AI",
+			"path": "../05_analyze-and-generate-images-with-Azure-AI/analyze-and-generate-images-with-Azure-AI"
+		},
+		{
+			"name": "my-first-static-web-app",
+			"path": "../06_my-first-static-web-app/my-first-static-web-app"
+		},
+		{
+			"path": "../00_GGZ_CS50P_Problem_Sets"
+		},
+		{
+			"path": "../04_HDS-Tools"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": null
+	}
+}
