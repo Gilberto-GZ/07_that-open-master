@@ -14,7 +14,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo-search {
@@ -34,8 +34,14 @@ header input[type="text"] {
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%; /* Adjust width to fit the container */
-    max-width: 300px; /* Set a maximum width for better layout */
+    width: 100%;
+    max-width: 300px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .user-profile img {
@@ -50,9 +56,9 @@ aside {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     position: fixed;
-    top: 60px; /* Adjusted to be below the header */
+    top: 60px;
     bottom: 0;
-    z-index: 0;
+    z-index: 1;
 }
 
 aside ul {
@@ -68,7 +74,8 @@ aside ul li {
 
 main {
     margin-left: 220px;
-    padding: 80px 20px 20px; /* Adjusted for header and padding */
+    padding: 80px 20px 20px;
+    z-index: 1;
 }
 
 .main-header {
@@ -141,4 +148,52 @@ table th, table td {
 
 .status.inactive {
     background-color: #6c757d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
 }
