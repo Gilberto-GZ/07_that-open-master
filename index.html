@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="sidebar">
+        <img id="company-logo" src="./assets/company-logo.svg" alt="Construction Company">
+        <ul id="nav-buttons">
+            <li><span class="material-icons-round">apartment</span>projects</li>
+            <li>projects</li>
+            <li>projects</li> 
+        </ul>
+    </aside>
+    <main id="content">
+        <div class="page" id="projects-page">
+            <dialog id="new-project-modal">
+                <form id="new-project-form">
+                    <h2>New Project</h2>
+                    <div class="input-list">
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">apartment</span>Name</label>
+                            <input name="name" type="text" placeholder="What´s the name of your project?">
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">description</span>Description</label>
+                            <textarea name="description" cols="30" rows="5" placeholder="Give your project a nice description! So people are jealous about it"></textarea>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">engineering</span>Role</label>
+                            <select name="userRole">
+                                <option>Architect</option>
+                                <option>Engineer</option>
+                                <option>Developer</option>
+                            </select>
+                        </div>
+                        <div class="form-field-container">
+                            <label><span class="material-icons-round">task_alt</span>Status</label>
+                            <select name="status">
+                                <option>Pending</option>
+                                <option>Active</option>
+                                <option>Finished</option>
+                            </select>
+                        </div>
+                        <div class="form-field-container">                       
+                            <label><span class="material-icons-round">event</span>Finish Date</label>
+                            <input name="finishDate" type="date" placeholder="Finish Date">
+                        </div>
+                    </div>
+                    <div>
+                        <button>Cancel</button>
+                        <button>Accept</button>
+                    </div>
+                </form>
+            </dialog>
+            <header>
+                <h2>projects</h2>
+                <div id="new-project-btn">
+                    <button><span class="material-icons-round">
+                        add
+                        </span>New Project</button>
+                </div>
+            </header>
+            <div id="projects-list">
+                <div class="project-card">
+                    <div class="card-header">
+                        <p style="background-color: #ca8434; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
+                        <div>
+                            <h5>Project Name</h5>
+                            <p>Project Description Goes Here...</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-property">
+                            <p style="color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style=" color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style=" color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style=" color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-header">
+                        <p style="background-color: #ca34bd; padding: 10px; border-radius: 8px; aspect-ratio: 1;">VS</p>
+                        <div>
+                            <h5>Project Name</h5>
+                            <p>Project Description Goes Here...</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-property">
+                            <p style="color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style=" color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style=" color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                        <div class="card-property">
+                            <p style=" color: #969696;">Status</p>
+                            <p>Active</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="page" id="project-details">
+            <header>
+                <div>
+                    <h2>Hospital Center</h2>
+                    <p style="color: #969696;">Community hospital location at downtown</p>
+                </div>
+            </header>
+            <div class="main-page-content">
+                <div style="display: flex; flex-direction: column; row-gap: 30px">
+                    <div class="dashboard-card" style="padding: 30px 0;">
+                        <div style="display: flex; justify-content:space-between; padding: 20px 30px; padding-top: 0;">
+                            <p style="background-color: #ca8434; padding: 10px; border-radius: 30px; aspect-ratio: 1; font-size: 20px; align-items: center;">HC</p>
+                            <button class="btn-secondary"><p style="color: #ffffff; width: 100%;">EDIT</p></button>
+                        </div>
+                        <div style="padding: 0 30px; font-size: small;">
+                            <div>
+                                <h5>Hospital Center</h5>
+                                <p>Community hospital located at downtown</p>
+                            </div>
+                            <div style="display: flex; column-gap:30px; padding-top: 30px; padding-bottom: 30px; font-size: small; justify-content: space-between;">
+                                <div>
+                                    <p style="color: #969696; font-size: small;">Status</p>
+                                    <p>Active</p>
+                                </div>
+                                <div>
+                                    <p style="color: #969696; font-size: small;">Cost</p>
+                                    <p>$ 2'542.000</p>
+                                </div>
+                                <div>
+                                    <p style="color: #969696; font-size: small;">Role</p>
+                                    <p>Engineer</p>
+                                </div>
+                                <div>
+                                    <p style="color: #969696; font-size: small;">Finish Date</p>
+                                    <p>2023-05-01</p>
+                                </div>
+                            </div>
+                            <div style="column-gap: 30px; width: 100%; background-color: #525252; border-radius: 20px;"> 
+                                <div style="display: flex; justify-content: center; align-items: center; height: 24px; width: 80%; background-color: green; border-radius: 20px;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-card" style="flex-grow: 1;">
+                        <div style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+                            <h4>To-Do</h4>
+                            <div style="display: flex; align-items: center;">
+                                <div style="display: flex; align-items: center;">
+                                    <span class="material-icons-round">search</span>
+                                    <input type="text" placeholder="Search To-Do"/>
+                                </div>
+                                <span class="material-icons-round">add</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; padding: 10px">
+                            <div class="todo-item">
+                                <div style="display: flex; justify-content: space-between; background-color: var(--background-200); padding: 10px; border-radius: 5px; margin-bottom: 10px;">
+                                    <div style="display: flex; column-gap: 15px;">
+                                        <span class="material-icons-round" style="background-color: #525252; border-radius: 10px;padding: 5px;">construction</span>
+                                        <p>Make anything here as you want, even something longer</p>
+                                    </div>
+                                    <div style="text-wrap: nowrap; margin-left: 10px">Fr, 20 sep</div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; background-color: var(--background-200); padding: 10px; border-radius: 5px; margin-bottom: 10px;">
+                                    <div style="display: flex; column-gap: 15px;">
+                                        <span class="material-icons-round" style="background-color: #525252; border-radius: 10px;padding: 5px;">construction</span>
+                                        <p>Make anything here as you want, even something longer</p>
+                                    </div>
+                                    <div style="text-wrap: nowrap; margin-left: 10px">Fr, 20 sep</div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; background-color: var(--background-200); padding: 10px; border-radius: 5px; margin-bottom: 10px;">
+                                    <div style="display: flex; column-gap: 15px;">
+                                        <span class="material-icons-round" style="background-color: #525252; border-radius: 10px;padding: 5px;">construction</span>
+                                        <p>Make anything here as you want, even something longer</p>
+                                    </div>
+                                    <div style="text-wrap: nowrap; margin-left: 10px">Fr, 20 sep</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div id="viewer-container" class="dashboard-card"></div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
