@@ -1,4 +1,5 @@
-import { Project, IProject, ProjectStatus, UserRole } from "../class/Project"
+import { IProject, ProjectStatus, UserRole } from "../classes/Project"
+import { ProjectsManager } from "../classes/ProjectsManager"
 
 function showModal(id: string) {
     const modal = document.getElementById(id)
@@ -8,6 +9,18 @@ function showModal(id: string) {
         console.warn("The provided modal wasn't found. ID: ", id)
     }
 }
+
+function closeModal(id: string) {
+    const modal = document.getElementById(id)
+    if (modal && modal instanceof HTMLDialogElement) {
+        modal.close()
+    } else {
+        console.warn("The provided modal wasn't found. ID: ", id)
+    }
+}
+
+const projectsListUI = document.getElementById("projects-list") as HTMLElement
+const projectsManager = new ProjectsManager(projectsListUI)
 
 // This document object is provided by the browser, and its main purpose is to help us interact with the html file
 const newProjectBtn = document.getElementById("new-project-btn")
@@ -31,8 +44,9 @@ if (projectForm && projectForm instanceof HTMLFormElement) {
             finishDate: new Date(formData.get("finishDate") as string)
         }
 
-        const project = new Project(projectData)
-        console.log(project)
+        const project = projectsManager.newProject(projectData)
+        projectForm.reset()
+        closeModal("new-project-modal")
     
 }) 
 
