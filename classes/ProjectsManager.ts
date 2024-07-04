@@ -14,4 +14,13 @@ export class ProjectsManager {
         this.list.push(project)
         return project
     }
+
+    getProject() { }
+
+    deleteProject() { }
+
+    exportToJSON() { }
+
+    importFromJSON() { }
+    
 }
