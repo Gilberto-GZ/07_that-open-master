@@ -43,13 +43,14 @@ if (projectForm && projectForm instanceof HTMLFormElement) {
             userRole: formData.get("userRole") as UserRole,
             finishDate: new Date(formData.get("finishDate") as string)
         }
-
-        const project = projectsManager.newProject(projectData)
-        projectForm.reset()
-        closeModal("new-project-modal")
-    
-}) 
-
+        try {
+            const project = projectsManager.newProject(projectData)
+            projectForm.reset()
+            closeModal("new-project-modal")
+        } catch(err) {
+            alert(err)
+        }    
+    }) 
 } else {
     console.warn("New project form was not found. Check the ID!")
 }
